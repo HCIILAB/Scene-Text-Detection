@@ -13,7 +13,7 @@
 - [2. Summary of Scene Text Detection Results](#2-summary-of-scene-text-detection-results)
     - [2.1 Comparison of methods](#21-comparison-of-methods)
         - [2.1.1 Component-level methods](#211-Component-level-methods)
-        - [2.1.2 Pixel-level methods](#212-Pixel-level methods-methods)
+        - [2.1.2 Pixel-level methods](#212-Pixel-level-methods-methods)
         - [2.1.3 Text-instance-level methods](#213-Text-instance-level-method)
     - [2.2 Detection results](#22-detection-result)
         - [2.2.1 Detection Results on Horizontal-Text Datasets](#221-Detection-Results-on-Horizontal-Text-Datasets)
