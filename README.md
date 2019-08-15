@@ -5,9 +5,9 @@
 <!-- MarkdownTOC -->
 
 - [1.Datasets](#1-datasets)
-    - [1.1 Horizontal-Text Datasets](#11-Horizontal-Text Datasets)
-    - [1.2 Arbitrary-Quadrilateral-Text Datasets](#12-Arbitrary-Quadrilateral-Text Datasets)
-    - [1.3 Irregular-Text Datasets](#13-Irregular-Text Datasets)
+    - [1.1 Horizontal-Text Datasets](#11-Horizontal-Text-Datasets)
+    - [1.2 Arbitrary-Quadrilateral-Text Datasets](#12-Arbitrary-Quadrilateral-Text-Datasets)
+    - [1.3 Irregular-Text Datasets](#13-Irregular-Text-Datasets)
     - [1.4 Synthetic Datasets](#14-synthetic-datasets)
     - [1.5 Comparison of Datasets](#15-comparison-of-datasets)
 - [2. Summary of Scene Text Detection Results](#2-summary-of-scene-text-detection-results)
@@ -16,10 +16,10 @@
         - [2.1.2 Pixel-level methods](#212-Pixel-level methods-methods)
         - [2.1.3 Text-instance-level methods](#213-Text-instance-level-method)
     - [2.2 Detection results](#22-detection-result)
-        - [2.2.1 Detection Results on Horizontal-Text Datasets](#221-Detection Results on Horizontal-Text Datasets)
-        - [2.2.2 Detection Results on Arbitrary-Quadrilateral-Text Datasets](#222-Detection Results on Arbitrary-Quadrilateral-Text Datasets)
-        - [2.2.3 Detection Results on Irregular-Text Datasets](#223-Detection Results on Irregular-Text Datasets)
-- [3. Field Survey](#3-field-survey)
+        - [2.2.1 Detection Results on Horizontal-Text Datasets](#221-Detection-Results-on-Horizontal-Text-Datasets)
+        - [2.2.2 Detection Results on Arbitrary-Quadrilateral-Text Datasets](#222-Detection-Results-on-Arbitrary-Quadrilateral-Text-Datasets)
+        - [2.2.3 Detection Results on Irregular-Text Datasets](#223-Detection-Results-on-Irregular-Text-Datasets)
+- [3. Survey](#3-survey)
 - [4. Evaluation](#4-Evaluation)
 - [5. OCR Service](#5-ocr-service)
 - [6. Reference and codes](#6-references)
@@ -31,7 +31,7 @@
 <a id="1-datasets"></a>
 ## 1. Datasets
 
-<a id="11-Horizontal-Text Datasets"></a>
+<a id="11-Horizontal-Text-Datasets"></a>
 ### 1.1 Horizontal-Text Datasets
 
 - ICDAR 2003(IC03)：
@@ -46,7 +46,7 @@
   * **Introduction:** IC13 is almost the same as IC11. It contains 462 images in total, 229 for training and 233 for testing. Specifically, it contains 849 text instance in training set, while 1095 in testing set.
   * **Link:** [IC13-download](http://dagdata.cvc.uab.es/icdar2013competition/?ch=2&com=downloads)
 
-<a id="12-Arbitrary-Quadrilateral-Text Datasets"></a>
+<a id="12-Arbitrary-Quadrilateral-Text-Datasets"></a>
 ### 1.2 Arbitrary-Quadrilateral-Text Datasets
 
 - USTB-SV1K：
@@ -93,7 +93,7 @@
   - **Introduction:** This data set is a large-scale Chinese Street View Trademark Data Set. It is based on Chinese words and Chinese text line-level labeling. The labeling method is arbitrary quadrilateral labeling. It contains 20000 images in total.
   - **Link:** [ReCTS-download](http://rrc.cvc.uab.es/?ch=12)
 
-<a id="13-Irregular-Text Datasets"></a>
+<a id="13-Irregular-Text-Datasets"></a>
 ### 1.3 Irregular-Text Datasets
 
 - CUTE80：
@@ -1417,7 +1417,7 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 <a id="22-detection-result"></a>
 ### 2.2 Detection result
 
-<a id="221-Detection Results on Horizontal-Text Datasets"></a>
+<a id="221-Detection-Results-on-Horizontal-Text-Datasets"></a>
 #### 2.2.1 Detection Results on Horizontal-Text Datasets
 
 <table cellspacing="0" border="0">
@@ -2361,7 +2361,7 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 	</tr>
 </table>
 
-<a id="222-Detection Results on Arbitrary-Quadrilateral-Text Datasets"></a>
+<a id="222-Detection-Results-on-Arbitrary-Quadrilateral-Text-Datasets"></a>
 #### 2.2.2 Detection Results on Arbitrary-Quadrilateral-Text Datasets
 
 <body>
@@ -3622,7 +3622,7 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 	</tr>
 </table>
 
-<a id="223-Detection Results on Irregular-Text Datasets"></a>
+<a id="223-Detection-Results-on-Irregular-Text-Datasets"></a>
 #### 2.2.3 Detection Results on Irregular-Text Datasets
 
 Im this section, we only select those methods suitable for irregular text detection.
@@ -3766,8 +3766,8 @@ Im this section, we only select those methods suitable for irregular text detect
 	</tr>
 </table>
 
-<a id="3-field-survey"></a>
-## 3. Field Survey
+<a id="3-survey"></a>
+## 3. Survey
 
 **[A] \[TPAMI-2015]** Ye Q, Doermann D. **Text detection and recognition in imagery: A survey**[J]. IEEE transactions on pattern analysis and machine intelligence, 2015, 37(7): 1480-1500. [paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6945320)
 
