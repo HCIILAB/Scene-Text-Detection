@@ -3861,4 +3861,10 @@ If you find any problems in our resources, or any good papers/codes we have miss
 
 Copyright © 2019 SCUT-DLVC. All Rights Reserved.
 
+<p align="center">
+    <img src="scut-dlvc.jpeg" alt="Sample"  width="150" height="75">
+    <p align="center">
+        <em></em>
+    </p>
+</p>
 
