@@ -3853,4 +3853,12 @@ If you are insterested in developing better scene text detection metrics, some r
 | **CTW[78]**: Yuan T L, Zhu Z, Xu K, et al. **Chinese Text in the Wild**. arXiv preprint arXiv:1803.00085, 2018. [Paper](https://arxiv.org/abs/1803.00085) |
 
 
-If you find any problems in this resource or some new papers for scene text detection, please inform us at **liuchongyu1996@gmail.com**. Thank you for your contribution.
+If you find any problems in our resources, or any good papers/codes we have missed, please inform us at    **liuchongyu1996@gmail.com**. Thank you for your contribution. 
+
+
+
+### Copyright
+
+Copyright © 2019 SCUT-DLVC. All Rights Reserved.
+
+
