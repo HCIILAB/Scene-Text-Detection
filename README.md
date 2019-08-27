@@ -13,7 +13,7 @@
 - [2. Summary of Scene Text Detection Resources](#2-summary-of-scene-text-detection-results)
     - [2.1 Comparison of Methods](#21-comparison-of-methods)
         - [2.1.1 Traditional Methods](#211-traditional-methods)
-        - [2.1.2 Segmentation-based Methods](#212-Pixel-level-methods-methods)
+        - [2.1.2 Segmentation-based Methods](#212-Pixel-level-methods)
         - [2.1.3 Regression-based Methods](#213-regression-methods)
         - [2.1.4 Hybrid Methods](#214-hybrid-methods)
     - [2.2 Detection Results](#22-detection-result)
