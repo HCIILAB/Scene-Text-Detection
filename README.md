@@ -3587,8 +3587,8 @@ In this section, we only select those methods suitable for irregular text detect
 	<tr>
 		<td height="20" align="center" valign=middle sdnum="2052;0;@"><font face="Arial">Baek et al. [62]</font></td>
 		<td align="center" valign=middle sdnum="2052;0;@"><font face="Arial">CRAFT</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ECCV</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
 		<td rowspan=4 align="center" valign=middle sdnum="2052;0;@"><font face="Arial">Segmentation</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.876</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.799</font></td>
