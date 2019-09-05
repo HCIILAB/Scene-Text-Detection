@@ -3859,7 +3859,7 @@ If you find any problems in our resources, or any good papers/codes we have miss
 
 ### Copyright
 
-Copyright © 2019 SCUT-DLVC. All Rights Reserved.
+Copyright @ 2019 SCUT-DLVC. All Rights Reserved.
 
 <p align="center">
     <img src="scut-dlvc.jpeg" alt="Sample"  width="150" height="75">
