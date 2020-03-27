@@ -942,8 +942,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="left" sdnum="2052;0;@">✓</td>
 		<td align="left" sdnum="2052;0;@">✓</td>
 		<td align="left" sdnum="2052;0;@">✕</td>
-		<td align="left">IJCAI</td>
-		<td align="left" sdval="2019" sdnum="2052;">2019</td>
+		<td align="left">WACV</td>
+		<td align="left" sdval="2020" sdnum="2052;">2019</td>
 		<td align="left">Presenting an additional scale predictor the estimate the better scale of text regions for testing.</td>
 	</tr>
 	<tr>
