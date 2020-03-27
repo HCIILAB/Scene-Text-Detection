@@ -13,7 +13,7 @@
 - [2. Summary of Scene Text Detection Resources](#2-summary-of-scene-text-detection-results)
     - [2.1 Comparison of Methods](#21-comparison-of-methods)
         - [2.1.1 Traditional Methods](#211-traditional-methods)
-        - [2.1.2 Segmentation-based Methods](#212-Pixel-level-methods)
+        - [2.1.2 Segmentation-based Methods](#212-Pixel-level-methods-methods)
         - [2.1.3 Regression-based Methods](#213-regression-methods)
         - [2.1.4 Hybrid Methods](#214-hybrid-methods)
     - [2.2 Detection Results](#22-detection-result)
@@ -113,7 +113,7 @@
   - **Introduction:** LSVT consists of 20,000 testing data, 30,000 training data in full annotations and 400,000 training data in weak annotations, which are referred to as partial labels. The labeled text regions demonstrate the diversity of text: horizontal, multi-oriented and curved.
   - **Link:** [LSVT-download](https://rrc.cvc.uab.es/?ch=16)
 
-- ArT：
+- ArTs：
   - **Introduction:** ArT consists of 10,166 images, 5,603 for training and 4,563 for testing. They were collected with text shape diversity in mind and all text shapes have high number of existence in ArT.
   - **Link:** [ArT-download](https://rrc.cvc.uab.es/?ch=14)
 
@@ -641,6 +641,7 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 </table>
 
 
+
 <a id="212-Pixel-level-methods"></a>
 #### 2.1.2 Segmentation-based Methods
 
@@ -660,281 +661,316 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center"><b><font face="Arial">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Highlight&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></b></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Li et al. [3]</font></td>
-		<td align="center"><br></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">TIP</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2014</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Li et al. [3]</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">TIP</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2014</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">(1)develop three novel cues that are tailored for character detection and a Bayesian method for their integration; (2)design a Markov random field model to exploit the inherent dependencies between characters.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Zhang et al. [14]</font></td>
-		<td align="center"><br></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Zhang et al. [14]</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Utilizing FCN for salient map detection and  centroid of each character prediction.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Zhu et al. [16]</font></td>
-		<td align="center"><br></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Zhu et al. [16]</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Performs a graph-based segmentation of connected components into words (Word-Graph).</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">He et al. [18]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">Text-CNN</font></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">TIP</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">He et al. [18]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">Text-CNN</font></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">TIP</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Developing a new learning mechanism to train the Text-CNN with multi-level and rich supervised information.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Yao et al. [21]</font></td>
-		<td align="center"><br></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Yao et al. [21]</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Proposing to localize text in a holistic manner, by casting scene text detection as a semantic segmentation problem.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Hu et al. [27]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">WordSup</font></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ICCV</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Hu et al. [27]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">WordSup</font></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ICCV</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Proposing a weakly supervised framework that can utilize word annotations. Then the detected characters are fed to a text structure analysis module.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Wu et al. [28]</font></td>
-		<td align="center"><br></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ICCV</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Wu et al. [28]</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ICCV</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Introducing the border class to the text detection problem for the first time, and validate that the decoding process is largely simplified with the help of text border.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Tang et al.[32]</font></td>
-		<td align="center"><br></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">TIP</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Tang et al.[32]</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">TIP</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">A text-aware candidate text region(CTR) extraction model + CTR refinement model.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Dai et al. [35]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">FTSN</font></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Dai et al. [35]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">FTSN</font></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Detecting and segmenting the text instance jointly and simultaneously, leveraging merits from both semantic segmentation task and region proposal based object detection task.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" valign=middle sdnum="2052;0;@"><font face="Arial">Wang et al. [38]</font></td>
-		<td align="center" valign=middle><br></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ICDAR</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
+		<td height="20" align="left" valign=middle sdnum="2052;0;@"><font face="Arial">Wang et al. [38]</font></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ICDAR</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">This paper proposes a novel character candidate extraction method based on super-pixel segmentation and hierarchical clustering.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" valign=middle sdnum="2052;0;@"><font face="Arial">Deng et al. [40]</font></td>
-		<td align="center" valign=middle sdnum="2052;0;@"><font face="Arial">PixelLink</font></td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">AAAI</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" valign=middle sdnum="2052;0;@"><font face="Arial">Deng et al. [40]</font></td>
+		<td align="left" valign=middle sdnum="2052;0;@"><font face="Arial">PixelLink</font></td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">AAAI</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Text instances are first segmented out by linking pixels wthin the same instance together.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Liu et al. [42]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">MCN</font></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Liu et al. [42]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">MCN</font></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Stochastic Flow Graph (SFG) + Markov Clustering.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Lyu et al. [43]</font></td>
-		<td align="center"><br></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Lyu et al. [43]</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Detect scene text by localizing corner points of text bounding boxes and segmenting text regions in relative positions.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Chu et al. [45]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">Border</font></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ECCV</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Chu et al. [45]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">Border</font></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ECCV</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">The paper presents a novel scene text detection technique that makes use of semantics-aware text borders and bootstrapping based text segment augmentation.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Long et al. [46]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">TextSnake</font></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ECCV</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Long et al. [46]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">TextSnake</font></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ECCV</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">The paper proposes TextSnake, which is able to effectively represent text instances in horizontal, oriented and curved forms based on symmetry axis.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Yang et al. [47]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">IncepText</font></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">IJCAI</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Yang et al. [47]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">IncepText</font></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">IJCAI</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Designing a novel Inception-Text module and introduce deformable PSROI pooling to deal with multi-oriented text detection.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Yue et al. [48]</font></td>
-		<td align="center"><br></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">BMVC</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Yue et al. [48]</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">BMVC</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Proposing a general framework for text detection called Guided CNN to achieve the two goals simultaneously.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Zhong et al. [53]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">AF-RPN</font></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Zhong et al. [53]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">AF-RPN</font></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Presenting AF-RPN(anchor-free) as an anchor-free and scale-friendly region proposal network for the Faster R-CNN framework.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Wang et al. [54]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">PSENet</font></td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Wang et al. [54]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">PSENet</font></td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Proposing a novel Progressive Scale Expansion Network (PSENet), designed as a segmentation-based detector with multiple predictions for each text instance.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Xu et al.[57]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">TextField</font></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Xu et al.[57]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">TextField</font></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Presenting a novel direction field which can represent scene texts of arbitrary shapes.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Tian et al. [58]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">FTDN</font></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ICIP</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Tian et al. [58]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">FTDN</font></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ICIP</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">FTDN is able to segment text region and simultaneously regress text box at pixel-level.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center"><font face="Arial">Tian et al. [83]</font></td>
-		<td align="center"><br></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center"><font face="Arial">CVPR</font></td>
-		<td align="center" sdval="2019" sdnum="2052;"><font face="Arial">2019</font></td>
+		<td height="20" align="left"><font face="Arial">Tian et al. [83]</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left"><font face="Arial">CVPR</font></td>
+		<td align="left" sdval="2019" sdnum="2052;"><font face="Arial">2019</font></td>
 		<td align="left"><font face="Arial">Constraining embedding feature of pixels inside the same text region to share similar properties.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Huang et al. [4]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">MSERs-CNN</font></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ECCV</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2014</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Huang et al. [4]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">MSERs-CNN</font></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ECCV</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2014</font></td>
 		<td align="left"><font face="Arial">Combining MSERs with CNN</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Sun et al. [6]</font></td>
-		<td align="center"><br></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">PR</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2015</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Sun et al. [6]</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">PR</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2015</font></td>
 		<td align="left"><font face="Arial">Presenting a robust text detection approach based on color-enhanced CER and neural networks.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" valign=middle sdnum="2052;0;@"><font face="Arial">Baek et al. [62]</font></td>
-		<td align="center" valign=middle sdnum="2052;0;@"><font face="Arial">CRAFT</font></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
+		<td height="20" align="left" valign=middle sdnum="2052;0;@"><font face="Arial">Baek et al. [62]</font></td>
+		<td align="left" valign=middle sdnum="2052;0;@"><font face="Arial">CRAFT</font></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
 		<td align="left"><font face="Arial">Proposing CRAFT effectively detect text area by exploring each character and affinity between characters.</font></td>
 	</tr>
+	<tr>
+		<td height="20" align="left">Richardson et al. [87]</td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left">IJCAI</td>
+		<td align="left" sdval="2019" sdnum="2052;">2019</td>
+		<td align="left">Presenting an additional scale predictor the estimate the better scale of text regions for testing.</td>
+	</tr>
+	<tr>
+		<td height="20" align="left">Wang et al. [88]</td>
+		<td align="left">SAST</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left">ACMM</td>
+		<td align="left" sdval="2019" sdnum="2052;">2019</td>
+		<td align="left">Presenting  a context attended multi-task learning framework for scene text detection.</td>
+	</tr>
+	<tr>
+		<td height="20" align="left">Wang et al. [90]</td>
+		<td align="left">PAN</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left">ICCV</td>
+		<td align="left" sdval="2019" sdnum="2052;">2019</td>
+		<td align="left">Proposing an efﬁcient and accurate arbitrary-shaped text detector called Pixel Aggregation Network(PAN),</td>
+	</tr>
 </table>
+
+
 
 <a id="213-regression-methods"></a>
 #### 2.1.3 Regression-based Methods
@@ -955,340 +991,365 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center"><b><font face="Arial">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Highlight&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></b></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Gupta et al. [15]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">FCRN</font></td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Gupta et al. [15]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">FCRN</font></td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">(a) Proposing a fast and scalable engine to generate synthetic images of text in clutter; (b) FCRN. </font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Zhong et al. [20]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">DeepText</font></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Zhong et al. [20]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">DeepText</font></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">(a) Inception-RPN; (b) Utilize ambiguous text category (ATC) information and multilevel region-of-interest pooling (MLRP).</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Liao et al. [22]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">TextBoxes</font></td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">AAAI</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Liao et al. [22]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">TextBoxes</font></td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">AAAI</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Mainly basing SSD object detection framework.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Liu et al. [25]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">DMPNet</font></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Liu et al. [25]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">DMPNet</font></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Quadrilateral sliding windows + shared Monte-Carlo method for fast and accurate computing of the polygonal areas + a sequential protocol for relative regression.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">He et al. [26]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">DDR</font></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ICCV</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">He et al. [26]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">DDR</font></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ICCV</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Proposing an FCN that has bi-task outputs where one is pixel-wise classification between text and non-text, and the other is direct regression to determine the vertex coordinates of quadrilateral text boundaries.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Jiang et al. [36]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">R2CNN</font></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Jiang et al. [36]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">R2CNN</font></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Using the Region Proposal Network (RPN) to generate axis-aligned bounding boxes that enclose the texts with different orientations.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Xing et al. [37]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ArbiText</font></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Xing et al. [37]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ArbiText</font></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Adopting the circle anchors and incorporating a pyramid pooling module into the Single Shot MultiBox Detector framework.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Zhang et al. [39]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">FEN</font></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">AAAI</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Zhang et al. [39]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">FEN</font></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">AAAI</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Proposing a refined scene text detector with a novel Feature Enhancement Network (FEN) for Region Proposal and Text Detection Refinement.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Wang et al. [41]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ITN</font></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Wang et al. [41]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ITN</font></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">ITN is presented to learn the geometry-aware representation encoding the unique geometric configurations of scene text instances with in-network transformation embedding.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Liao et al. [44]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">RRD</font></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Liao et al. [44]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">RRD</font></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">The regression branch extracts rotation-sensitive features, while the classification branch extracts rotation-invariant features by pooling the rotation sensitive features.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Liao et al. [49]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">TextBoxes++</font></td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">TIP</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Liao et al. [49]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">TextBoxes++</font></td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">TIP</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Mainly basing SSD object detection framework and it replaces the rectangular box representation in conventional object detector by a quadrilateral or oriented rectangle representation.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">He et al. [50]</font></td>
-		<td align="center"><br></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">TIP</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">He et al. [50]</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">TIP</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Proposing a scene text detection framework based on fully convolutional network with a bi-task prediction module.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Ma et al. [51]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">RRPN</font></td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">TMM</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Ma et al. [51]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">RRPN</font></td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">TMM</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">RRPN + RRoI Pooling.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Zhu et al. [55]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">SLPR</font></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Zhu et al. [55]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">SLPR</font></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">SLPR regresses multiple points on the edge of text line and then utilizes these points to sketch the outlines of the text.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Deng et al. [56]</font></td>
-		<td align="center"><br></td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Deng et al. [56]</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">CRPN employs corners to estimate the possible locations of text instances. And it also designs a embedded data augmentation module inside region-wise subnetwork.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Cai et al. [59]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">FFN</font></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ICIP</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Cai et al. [59]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">FFN</font></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ICIP</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Proposing a Feature Fusion Network to deal with text regions differing in enormous sizes.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Sabyasachi et al. [60]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">RGC</font></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ICIP</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Sabyasachi et al. [60]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">RGC</font></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ICIP</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Proposing a novel recurrent architecture to improve the learnings of a feature map at a given time.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Liu et al. [63]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">CTD</font></td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">PR</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Liu et al. [63]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">CTD</font></td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">PR</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">CTD + TLOC + PNMS</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center"><font face="Arial">Xie et al. [79]</font></td>
-		<td align="center"><font face="Arial">DeRPN</font></td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center"><font face="Arial">AAAI</font></td>
-		<td align="center" sdval="2019" sdnum="2052;"><font face="Arial">2019</font></td>
+		<td height="20" align="left"><font face="Arial">Xie et al. [79]</font></td>
+		<td align="left"><font face="Arial">DeRPN</font></td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left"><font face="Arial">AAAI</font></td>
+		<td align="left" sdval="2019" sdnum="2052;"><font face="Arial">2019</font></td>
 		<td align="left"><font face="Arial">DeRPN utilizes anchor string mechanism instead of anchor box in RPN.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center"><font face="Arial">Wang et al. [82]</font></td>
-		<td align="center"><br></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center"><font face="Arial">CVPR</font></td>
-		<td align="center" sdval="2019" sdnum="2052;"><font face="Arial">2019</font></td>
+		<td height="20" align="left"><font face="Arial">Wang et al. [82]</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left"><font face="Arial">CVPR</font></td>
+		<td align="left" sdval="2019" sdnum="2052;"><font face="Arial">2019</font></td>
 		<td align="left"><font face="Arial">Text-RPN  + RNN</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center"><font face="Arial">Liu et al. [84]</font></td>
-		<td align="center"><br></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center"><font face="Arial">CVPR</font></td>
-		<td align="center" sdval="2019" sdnum="2052;"><font face="Arial">2019</font></td>
+		<td height="20" align="left"><font face="Arial">Liu et al. [84]</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left"><font face="Arial">CVPR</font></td>
+		<td align="left" sdval="2019" sdnum="2052;"><font face="Arial">2019</font></td>
 		<td align="left">CSE mechanism</td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">He et al. [29]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">SSTD</font></td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ICCV</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">He et al. [29]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">SSTD</font></td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ICCV</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Proposing an attention mechanism. Then developing a hierarchical inception module which efficiently aggregates multi-scale inception features.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Tian et al. [11]</font></td>
-		<td align="center" sdnum="2052;0;@"><br></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ICCV</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2015</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Tian et al. [11]</font></td>
+		<td align="left" sdnum="2052;0;@"><br></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ICCV</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2015</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Cascade boosting detects character candidates, and  the min-cost flow network model get the final result.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Tian et al. [13]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">CTPN</font></td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ECCV</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Tian et al. [13]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">CTPN</font></td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ECCV</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">1) RPN + LSTM. 2) RPN incorporate a new vertical anchor mechanism and LSTM connects the region to get the final result.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">He et al. [19]</font></td>
-		<td align="center" sdnum="2052;0;@"><br></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ACCV</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">He et al. [19]</font></td>
+		<td align="left" sdnum="2052;0;@"><br></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ACCV</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">ER detetctor detects regions to get coarse prediction of text regions. Then the local context is aggregated to classify the remaining regions to obtain a final prediction.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Shi et al. [23]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">SegLink</font></td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Shi et al. [23]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">SegLink</font></td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Decomposing text into segments and links. A link connects two adjacent segments. </font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Tian et al. [30]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">WeText</font></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ICCV</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Tian et al. [30]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">WeText</font></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ICCV</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Proposing a weakly supervised scene text detection method (WeText).</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Zhu et al. [31]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">RTN</font></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ICDAR</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Zhu et al. [31]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">RTN</font></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ICDAR</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Mainly basing CTPN vertical vertical proposal mechanism.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Ren et al. [34]</font></td>
-		<td align="center" sdnum="2052;0;@"><br></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">TMM</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Ren et al. [34]</font></td>
+		<td align="left" sdnum="2052;0;@"><br></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">TMM</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Proposing a CNN-based detector. It contains a text structure component detector layer, a spatial pyramid layer, and a multi-input-layer deep belief network (DBN).</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Zhang et al. [10]</font></td>
-		<td align="center"><br></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
-		<td align="center" sdval="2015" sdnum="2052;">2015</td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Zhang et al. [10]</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
+		<td align="left" sdval="2015" sdnum="2052;">2015</td>
 		<td align="left" sdnum="2052;0;@"><font face="Arial">The proposed algorithm exploits the symmetry property of character groups and allows for direct extraction of text lines from natural images.</font></td>
 	</tr>
+	<tr>
+		<td height="20" align="left">Wang et al. [86]</td>
+		<td align="left">DSRN</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left">IJCAI</td>
+		<td align="left" sdval="2019" sdnum="2052;">2019</td>
+		<td align="left">Presenting a scale-transfer module and scale relationship module to handle the problem of scale variation.</td>
+	</tr>
+	<tr>
+		<td height="20" align="left">Tang et al.[89]</td>
+		<td align="left">Seglink++</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left">PR</td>
+		<td align="left" sdval="2019" sdnum="2052;">2019</td>
+		<td align="left">Presenting instance aware component grouping (ICG) for arbitrary-shape text detection.</td>
+	</tr>
 </table>
+
+
 
 <a id="214-hybrid-methods"></a>
 #### 2.1.4 Hybrid Methods
 
+<body>
 <table cellspacing="0" border="0">
 	<colgroup width="118"></colgroup>
 	<colgroup width="135"></colgroup>
@@ -1306,101 +1367,127 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center"><b><font face="Arial">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Highlight&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></b></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Tang et al. [52]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">SSFT</font></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">TMM</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Tang et al. [52]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">SSFT</font></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">TMM</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Proposing a novel scene text detection method that involves superpixel-based stroke feature transform (SSFT) and deep learning based region classification (DLRC).</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Xie et al.[61]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">SPCNet</font></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">AAAI</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Xie et al.[61]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">SPCNet</font></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">AAAI</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Text Context module + Re-Score mechanism.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Liu et al. [64]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">PMTD</font></td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Liu et al. [64]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">PMTD</font></td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Perform “soft” semantic segmentation. It assigns a soft pyramid label (i.e., a real value between 0 and 1) for each pixel within text instance.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center"><font face="Arial">Liu et al. [80]</font></td>
-		<td align="center"><font face="Arial">BDN</font></td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center"><font face="Arial">IJCAI</font></td>
-		<td align="center" sdval="2019" sdnum="2052;"><font face="Arial">2019</font></td>
+		<td height="20" align="left"><font face="Arial">Liu et al. [80]</font></td>
+		<td align="left"><font face="Arial">BDN</font></td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left"><font face="Arial">IJCAI</font></td>
+		<td align="left" sdval="2019" sdnum="2052;"><font face="Arial">2019</font></td>
 		<td align="left"><font face="Arial">Discretizing bouding boxes into key edges to address label confusion for text detection.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center"><font face="Arial">Zhang et al. [81]</font></td>
-		<td align="center"><font face="Arial">LOMO</font></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center"><font face="Arial">CVPR</font></td>
-		<td align="center" sdval="2019" sdnum="2052;"><font face="Arial">2019</font></td>
+		<td height="20" align="left"><font face="Arial">Zhang et al. [81]</font></td>
+		<td align="left"><font face="Arial">LOMO</font></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left"><font face="Arial">CVPR</font></td>
+		<td align="left" sdval="2019" sdnum="2052;"><font face="Arial">2019</font></td>
 		<td align="left"><font face="Arial">DR + IRM + SEM</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center"><font face="Arial">Zhou et al. [24]</font></td>
-		<td align="center"><font face="Arial">EAST</font></td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center"><font face="Arial">CVPR</font></td>
-		<td align="center"><font face="Arial">2017</font></td>
+		<td height="20" align="left"><font face="Arial">Zhou et al. [24]</font></td>
+		<td align="left"><font face="Arial">EAST</font></td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left"><font face="Arial">CVPR</font></td>
+		<td align="left"><font face="Arial">2017</font></td>
 		<td align="left"><font face="Arial">The pipeline directly predicts words or text lines of arbitrary orientations and quadrilateral shapes in full images with instance segmentation.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Yue et al. [48]</font></td>
-		<td align="center"><br></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">BMVC</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Yue et al. [48]</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">BMVC</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Proposing a general framework for text detection called Guided CNN to achieve the two goals simultaneously.</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Zhong et al. [53]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">AF-RPN</font></td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✓</td>
-		<td align="center" sdnum="2052;0;@">✕</td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Zhong et al. [53]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">AF-RPN</font></td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td colspan=13 align="left" sdnum="2052;0;@"><font face="Arial">Presenting AF-RPN(anchor-free) as an anchor-free and scale-friendly region proposal network for the Faster R-CNN framework.</font></td>
+	</tr>
+	<tr>
+		<td height="20" align="left">Xue et al.[85]</td>
+		<td align="left">MSR</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left">IJCAI</td>
+		<td align="left" sdval="2019" sdnum="2052;">2019</td>
+		<td align="left">Presenting a noval multi-scale regression network.</td>
+	</tr>
+	<tr>
+		<td height="20" align="left">Liao et al. [91]</td>
+		<td align="left">DB</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left">AAAI</td>
+		<td align="left" sdval="2020" sdnum="2052;">2020</td>
+		<td align="left">Presenting differentiable binarization module to adaptively set the thresholds for binarization, which simpliﬁes the post-processing.</td>
 	</tr>
 </table>
 
 <a id="22-detection-result"></a>
 ### 2.2 Detection Results
 
+
+
+
 <a id="221-Detection-Results-on-Horizontal-Text-Datasets"></a>
 #### 2.2.1 Detection Results on Horizontal-Text Datasets
 
+<body>
 <table cellspacing="0" border="0">
 	<colgroup width="192"></colgroup>
 	<colgroup span="3" width="85"></colgroup>
@@ -1428,11 +1515,11 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><b><font face="Arial">F</font></b></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Yao et al. [1]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">TD-Mixture</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2012</font></td>
-		<td rowspan=6 align="center" valign=middle sdnum="2052;0;@"><font face="Arial">Traditional </font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Yao et al. [1]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">TD-Mixture</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2012</font></td>
+		<td rowspan=6 align="left" valign=middle sdnum="2052;0;@"><font face="Arial">Traditional </font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -1444,10 +1531,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Yin et al. [2]</font></td>
-		<td align="center"><br></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">TPAMI</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2013</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Yin et al. [2]</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">TPAMI</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2013</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.86</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.68</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.76</font></td>
@@ -1459,10 +1546,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Yin et al. [7]</font></td>
-		<td align="center"><br></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">TPAMI</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2015</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Yin et al. [7]</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">TPAMI</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2015</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.838</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.66</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.738</font></td>
@@ -1474,10 +1561,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Wu et al. [9]</font></td>
-		<td align="center"><br></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">TMM</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2015</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Wu et al. [9]</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">TMM</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2015</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -1489,10 +1576,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Liang et al. [8]</font></td>
-		<td align="center"><br></td>
-		<td align="center"><font face="Arial">TIP</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2015</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Liang et al. [8]</font></td>
+		<td align="left"><br></td>
+		<td align="left"><font face="Arial">TIP</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2015</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.77</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.68</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.71</font></td>
@@ -1504,10 +1591,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Michal et al.[12]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">FASText</font></td>
-		<td align="center"><font face="Arial">ICCV</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2015</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Michal et al.[12]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">FASText</font></td>
+		<td align="left"><font face="Arial">ICCV</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2015</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -1519,11 +1606,11 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Li et al. [3]</font></td>
-		<td align="center"><br></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">TIP</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2014</font></td>
-		<td rowspan=14 align="center" valign=middle>Segmentation</td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Li et al. [3]</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">TIP</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2014</font></td>
+		<td rowspan=14 align="left" valign=middle>Segmentation</td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.80</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.62</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.70</font></td>
@@ -1535,10 +1622,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Zhang et al. [14]</font></td>
-		<td align="center"><br></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Zhang et al. [14]</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -1550,10 +1637,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">He et al. [18]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">Text-CNN</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">TIP</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">He et al. [18]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">Text-CNN</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">TIP</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.91</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.74</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.82</font></td>
@@ -1565,10 +1652,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.79</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Yao et al. [21]</font></td>
-		<td align="center"><br></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Yao et al. [21]</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -1580,10 +1667,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Hu et al. [27]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">WordSup</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ICCV</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Hu et al. [27]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">WordSup</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ICCV</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -1595,10 +1682,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Tang et al.[32]</font></td>
-		<td align="center"><br></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">TIP</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Tang et al.[32]</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">TIP</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.90</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.86</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.88</font></td>
@@ -1610,10 +1697,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" valign=middle sdnum="2052;0;@"><font face="Arial">Wang et al. [38]</font></td>
-		<td align="center" valign=middle><br></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ICDAR</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
+		<td height="20" align="left" valign=middle sdnum="2052;0;@"><font face="Arial">Wang et al. [38]</font></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ICDAR</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.87</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.78</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.82</font></td>
@@ -1625,10 +1712,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" valign=middle sdnum="2052;0;@"><font face="Arial">Deng et al. [40]</font></td>
-		<td align="center" valign=middle sdnum="2052;0;@"><font face="Arial">PixelLink</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">AAAI</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" valign=middle sdnum="2052;0;@"><font face="Arial">Deng et al. [40]</font></td>
+		<td align="left" valign=middle sdnum="2052;0;@"><font face="Arial">PixelLink</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">AAAI</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -1640,10 +1727,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Liu et al. [42]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">MCN</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Liu et al. [42]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">MCN</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -1655,10 +1742,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Lyu et al. [43]</font></td>
-		<td align="center"><br></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Lyu et al. [43]</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -1670,10 +1757,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Chu et al. [45]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">Border</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ECCV</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Chu et al. [45]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">Border</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ECCV</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -1685,10 +1772,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Wang et al. [54]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">PSENet</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Wang et al. [54]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">PSENet</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -1700,10 +1787,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Huang et al. [4]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">MSERs-CNN</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ECCV</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2014</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Huang et al. [4]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">MSERs-CNN</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ECCV</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2014</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.88</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.71</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.78</font></td>
@@ -1715,10 +1802,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.75</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Sun et al. [6]</font></td>
-		<td align="center"><br></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">PR</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2015</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Sun et al. [6]</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">PR</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2015</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.92</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.91</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.91</font></td>
@@ -1730,11 +1817,11 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Gupta et al. [15]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">FCRN</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
-		<td rowspan=24 align="center" valign=middle>Regression</td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Gupta et al. [15]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">FCRN</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
+		<td rowspan=24 align="left" valign=middle>Regression</td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.94</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.77</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.85</font></td>
@@ -1746,10 +1833,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Zhong et al. [20]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">DeepText</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Zhong et al. [20]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">DeepText</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.87</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.83</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.85</font></td>
@@ -1761,10 +1848,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Liao et al. [22]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">TextBoxes</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">AAAI</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Liao et al. [22]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">TextBoxes</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">AAAI</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.89</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.82</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.86</font></td>
@@ -1776,10 +1863,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Liu et al. [25]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">DMPNet</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Liu et al. [25]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">DMPNet</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -1791,10 +1878,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Jiang et al. [36]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">R2CNN</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Jiang et al. [36]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">R2CNN</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -1806,10 +1893,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Xing et al. [37]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ArbiText</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Xing et al. [37]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ArbiText</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -1821,10 +1908,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Wang et al. [41]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ITN</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Wang et al. [41]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ITN</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.896</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.889</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.892</font></td>
@@ -1836,10 +1923,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Liao et al. [49]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">TextBoxes++</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">TIP</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Liao et al. [49]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">TextBoxes++</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">TIP</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -1851,10 +1938,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">He et al. [50]</font></td>
-		<td align="center"><br></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">TIP</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">He et al. [50]</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">TIP</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -1866,10 +1953,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Ma et al. [51]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">RRPN</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">TMM</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Ma et al. [51]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">RRPN</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">TMM</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -1881,10 +1968,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Zhu et al. [55]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">SLPR</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Zhu et al. [55]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">SLPR</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -1896,10 +1983,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Cai et al. [59]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">FFN</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ICIP</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Cai et al. [59]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">FFN</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ICIP</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -1911,10 +1998,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Sabyasachi et al. [60]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">RGC</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ICIP</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Sabyasachi et al. [60]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">RGC</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ICIP</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -1926,10 +2013,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center"><font face="Arial">Wang et al. [82]</font></td>
-		<td align="center"><br></td>
-		<td align="center"><font face="Arial">CVPR</font></td>
-		<td align="center" sdval="2019" sdnum="2052;"><font face="Arial">2019</font></td>
+		<td height="20" align="left"><font face="Arial">Wang et al. [82]</font></td>
+		<td align="left"><br></td>
+		<td align="left"><font face="Arial">CVPR</font></td>
+		<td align="left" sdval="2019" sdnum="2052;"><font face="Arial">2019</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -1941,10 +2028,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center"><font face="Arial">Liu et al. [84]</font></td>
-		<td align="center"><br></td>
-		<td align="center"><font face="Arial">CVPR</font></td>
-		<td align="center" sdval="2019" sdnum="2052;"><font face="Arial">2019</font></td>
+		<td height="20" align="left"><font face="Arial">Liu et al. [84]</font></td>
+		<td align="left"><br></td>
+		<td align="left"><font face="Arial">CVPR</font></td>
+		<td align="left" sdval="2019" sdnum="2052;"><font face="Arial">2019</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -1956,10 +2043,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">He et al. [29]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">SSTD</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ICCV</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">He et al. [29]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">SSTD</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ICCV</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -1971,10 +2058,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Tian et al. [11]</font></td>
-		<td align="center" sdnum="2052;0;@"><br></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ICCV</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2015</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Tian et al. [11]</font></td>
+		<td align="left" sdnum="2052;0;@"><br></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ICCV</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2015</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.86</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.76</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.81</font></td>
@@ -1986,10 +2073,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Tian et al. [13]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">CTPN</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ECCV</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Tian et al. [13]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">CTPN</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ECCV</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -2001,10 +2088,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">He et al. [19]</font></td>
-		<td align="center" sdnum="2052;0;@"><br></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ACCV</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">He et al. [19]</font></td>
+		<td align="left" sdnum="2052;0;@"><br></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ACCV</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -2016,10 +2103,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Shi et al. [23]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">SegLink</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Shi et al. [23]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">SegLink</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -2031,10 +2118,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Tian et al. [30]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">WeText</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ICCV</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Tian et al. [30]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">WeText</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ICCV</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -2046,10 +2133,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Zhu et al. [31]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">RTN</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ICDAR</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Zhu et al. [31]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">RTN</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ICDAR</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -2061,10 +2148,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Ren et al. [34]</font></td>
-		<td align="center" sdnum="2052;0;@"><br></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">TMM</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Ren et al. [34]</font></td>
+		<td align="left" sdnum="2052;0;@"><br></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">TMM</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.78</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.67</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.72</font></td>
@@ -2076,10 +2163,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Zhang et al. [10]</font></td>
-		<td align="center"><br></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
-		<td align="center" sdval="2015" sdnum="2052;">2015</td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Zhang et al. [10]</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
+		<td align="left" sdval="2015" sdnum="2052;">2015</td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.84</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.76</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.80</font></td>
@@ -2091,11 +2178,11 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Tang et al. [52]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">SSFT</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">TMM</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
-		<td rowspan=6 align="center" valign=middle>Hybrid</td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Tang et al. [52]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">SSFT</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">TMM</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td rowspan=7 align="left" valign=middle>Hybrid</td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.906</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.847</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.876</font></td>
@@ -2107,10 +2194,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Xie et al.[61]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">SPCNet</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">AAAI</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Xie et al.[61]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">SPCNet</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">AAAI</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -2122,10 +2209,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center"><font face="Arial">Liu et al. [80]</font></td>
-		<td align="center"><font face="Arial">BDN</font></td>
-		<td align="center"><font face="Arial">IJCAI</font></td>
-		<td align="center" sdval="2019" sdnum="2052;"><font face="Arial">2019</font></td>
+		<td height="20" align="left"><font face="Arial">Liu et al. [80]</font></td>
+		<td align="left"><font face="Arial">BDN</font></td>
+		<td align="left"><font face="Arial">IJCAI</font></td>
+		<td align="left" sdval="2019" sdnum="2052;"><font face="Arial">2019</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -2137,10 +2224,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center"><font face="Arial">Zhou et al. [24]</font></td>
-		<td align="center"><font face="Arial">EAST</font></td>
-		<td align="center"><font face="Arial">CVPR</font></td>
-		<td align="center"><font face="Arial">2017</font></td>
+		<td height="20" align="left"><font face="Arial">Zhou et al. [24]</font></td>
+		<td align="left"><font face="Arial">EAST</font></td>
+		<td align="left"><font face="Arial">CVPR</font></td>
+		<td align="left"><font face="Arial">2017</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -2152,10 +2239,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Yue et al. [48]</font></td>
-		<td align="center"><br></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">BMVC</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Yue et al. [48]</font></td>
+		<td align="left"><br></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">BMVC</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -2167,10 +2254,10 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Zhong et al. [53]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">AF-RPN</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Zhong et al. [53]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">AF-RPN</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -2181,7 +2268,25 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
+	<tr>
+		<td height="20" align="left">Xue et al.[85]</td>
+		<td align="left">MSR</td>
+		<td align="left">IJCAI</td>
+		<td align="left" sdval="2019" sdnum="2052;">2019</td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.918</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.885</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.901</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+	</tr>
 </table>
+
+
+
 
 <a id="222-Detection-Results-on-Arbitrary-Quadrilateral-Text-Datasets"></a>
 #### 2.2.2 Detection Results on Arbitrary-Quadrilateral-Text Datasets
@@ -2219,11 +2324,11 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><b><font face="Arial">F</font></b></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Le et al. [5]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">HOCC</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Le et al. [5]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">HOCC</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2014</font></td>
-		<td rowspan=6 align="center" valign=middle><font face="Arial">Traditional</font></td>
+		<td rowspan=6 align="left" valign=middle><font face="Arial">Traditional</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -2238,8 +2343,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Yin et al. [7]</font></td>
-		<td align="center"><br></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Yin et al. [7]</font></td>
+		<td align="left"><br></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">TPAMI</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2015</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -2256,8 +2361,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Wu et al. [9]</font></td>
-		<td align="center"><br></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Wu et al. [9]</font></td>
+		<td align="left"><br></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">TMM</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2015</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -2274,8 +2379,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Tian et al. [17]</font></td>
-		<td align="center"><br></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Tian et al. [17]</font></td>
+		<td align="left"><br></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">IJCAI</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -2292,8 +2397,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" valign=middle sdnum="2052;0;@"><font face="Arial">Yang et al. [33]</font></td>
-		<td align="center" valign=middle><br></td>
+		<td height="20" align="left" valign=middle sdnum="2052;0;@"><font face="Arial">Yang et al. [33]</font></td>
+		<td align="left" valign=middle><br></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">TIP</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -2310,8 +2415,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Times New Roman">Liang et al. [8]</font></td>
-		<td align="center"><br></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Times New Roman">Liang et al. [8]</font></td>
+		<td align="left"><br></td>
 		<td align="center"><font face="Arial">TIP</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2015</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -2328,11 +2433,11 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Zhang et al. [14]</font></td>
-		<td align="center"><br></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Zhang et al. [14]</font></td>
+		<td align="left"><br></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
-		<td rowspan=18 align="center" valign=middle><font face="Arial">Segmentation</font></td>
+		<td rowspan=21 align="left" valign=middle><font face="Arial">Segmentation</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.71</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.43</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.54</font></td>
@@ -2347,8 +2452,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Zhu et al. [16]</font></td>
-		<td align="center"><br></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Zhu et al. [16]</font></td>
+		<td align="left"><br></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.81</font></td>
@@ -2365,8 +2470,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">He et al. [18]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">Text-CNN</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">He et al. [18]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">Text-CNN</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">TIP</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -2383,8 +2488,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Yao et al. [21]</font></td>
-		<td align="center"><br></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Yao et al. [21]</font></td>
+		<td align="left"><br></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.723</font></td>
@@ -2401,8 +2506,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Hu et al. [27]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">WordSup</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Hu et al. [27]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">WordSup</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">ICCV</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.793</font></td>
@@ -2419,8 +2524,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Wu et al. [28]</font></td>
-		<td align="center"><br></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Wu et al. [28]</font></td>
+		<td align="left"><br></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">ICCV</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.91</font></td>
@@ -2437,8 +2542,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Dai et al. [35]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">FTSN</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Dai et al. [35]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">FTSN</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.886</font></td>
@@ -2455,8 +2560,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" valign=middle sdnum="2052;0;@"><font face="Arial">Deng et al. [40]</font></td>
-		<td align="center" valign=middle sdnum="2052;0;@"><font face="Arial">PixelLink</font></td>
+		<td height="20" align="left" valign=middle sdnum="2052;0;@"><font face="Arial">Deng et al. [40]</font></td>
+		<td align="left" valign=middle sdnum="2052;0;@"><font face="Arial">PixelLink</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">AAAI</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.855</font></td>
@@ -2473,8 +2578,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Liu et al. [42]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">MCN</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Liu et al. [42]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">MCN</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.72</font></td>
@@ -2491,8 +2596,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Lyu et al. [43]</font></td>
-		<td align="center"><br></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Lyu et al. [43]</font></td>
+		<td align="left"><br></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.895</font></td>
@@ -2509,8 +2614,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Chu et al. [45]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">Border</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Chu et al. [45]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">Border</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">ECCV</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -2527,8 +2632,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Long et al. [46]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">TextSnake</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Long et al. [46]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">TextSnake</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">ECCV</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.849</font></td>
@@ -2545,8 +2650,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Yang et al. [47]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">IncepText</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Yang et al. [47]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">IncepText</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">IJCAI</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.938</font></td>
@@ -2563,8 +2668,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Wang et al. [54]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">PSENet</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Wang et al. [54]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">PSENet</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.8692</font></td>
@@ -2581,8 +2686,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Xu et al.[57]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">TextField</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Xu et al.[57]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">TextField</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.843</font></td>
@@ -2599,8 +2704,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Tian et al. [58]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">FTDN</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Tian et al. [58]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">FTDN</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">ICIP</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.847</font></td>
@@ -2617,8 +2722,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center"><font face="Arial">Tian et al. [83]</font></td>
-		<td align="center"><br></td>
+		<td height="20" align="left"><font face="Arial">Tian et al. [83]</font></td>
+		<td align="left"><br></td>
 		<td align="center"><font face="Arial">CVPR</font></td>
 		<td align="center" sdval="2019" sdnum="2052;"><font face="Arial">2019</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.883</font></td>
@@ -2635,8 +2740,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" valign=middle sdnum="2052;0;@"><font face="Arial">Baek et al. [62]</font></td>
-		<td align="center" valign=middle sdnum="2052;0;@"><font face="Arial">CRAFT</font></td>
+		<td height="20" align="left" valign=middle sdnum="2052;0;@"><font face="Arial">Baek et al. [62]</font></td>
+		<td align="left" valign=middle sdnum="2052;0;@"><font face="Arial">CRAFT</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.898</font></td>
@@ -2653,11 +2758,65 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Gupta et al. [15]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">FCRN</font></td>
+		<td height="20" align="left">Richardson et al. [87]</td>
+		<td align="left" valign=middle sdnum="2052;0;@"><br></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">IJCAI</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.853</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.83</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.827</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+	</tr>
+	<tr>
+		<td height="20" align="left">Wang et al. [88]</td>
+		<td align="left">SAST</td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">ACMM</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.8755</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.8734</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.8744</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+	</tr>
+	<tr>
+		<td height="20" align="left">Wang et al. [90]</td>
+		<td align="left">PAN</td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">ICCV</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.84</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.819</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.829</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.844</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.838</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.821</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+	</tr>
+	<tr>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Gupta et al. [15]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">FCRN</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
-		<td rowspan=18 align="center" valign=middle><font face="Arial">Regression</font></td>
+		<td rowspan=20 align="left" valign=middle><font face="Arial">Regression</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -2672,8 +2831,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.624</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Liu et al. [25]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">DMPNet</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Liu et al. [25]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">DMPNet</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.732</font></td>
@@ -2690,8 +2849,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">He et al. [26]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">DDR</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">He et al. [26]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">DDR</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">ICCV</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.82</font></td>
@@ -2708,8 +2867,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Jiang et al. [36]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">R2CNN</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Jiang et al. [36]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">R2CNN</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.856</font></td>
@@ -2726,8 +2885,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Xing et al. [37]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ArbiText</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Xing et al. [37]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ArbiText</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.792</font></td>
@@ -2744,8 +2903,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Wang et al. [41]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">ITN</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Wang et al. [41]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">ITN</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.857</font></td>
@@ -2762,8 +2921,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Liao et al. [44]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">RRD</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Liao et al. [44]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">RRD</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.88</font></td>
@@ -2780,8 +2939,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Liao et al. [49]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">TextBoxes++</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Liao et al. [49]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">TextBoxes++</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">TIP</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.878</font></td>
@@ -2798,8 +2957,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">He et al. [50]</font></td>
-		<td align="center"><br></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">He et al. [50]</font></td>
+		<td align="left"><br></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">TIP</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.85</font></td>
@@ -2816,8 +2975,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Ma et al. [51]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">RRPN</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Ma et al. [51]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">RRPN</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">TMM</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.822</font></td>
@@ -2834,8 +2993,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Zhu et al. [55]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">SLPR</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Zhu et al. [55]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">SLPR</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.855</font></td>
@@ -2852,8 +3011,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Deng et al. [56]</font></td>
-		<td align="center"><br></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Deng et al. [56]</font></td>
+		<td align="left"><br></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.89</font></td>
@@ -2870,8 +3029,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Sabyasachi et al. [60]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">RGC</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Sabyasachi et al. [60]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">RGC</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">ICIP</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.83</font></td>
@@ -2888,8 +3047,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center"><font face="Arial">Wang et al. [82]</font></td>
-		<td align="center"><br></td>
+		<td height="20" align="left"><font face="Arial">Wang et al. [82]</font></td>
+		<td align="left"><br></td>
 		<td align="center"><font face="Arial">CVPR</font></td>
 		<td align="center" sdval="2019" sdnum="2052;"><font face="Arial">2019</font></td>
 		<td align="center" sdval="0.892" sdnum="2052;"><font face="Arial">0.892</font></td>
@@ -2906,8 +3065,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">He et al. [29]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">SSTD</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">He et al. [29]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">SSTD</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">ICCV</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.80</font></td>
@@ -2924,8 +3083,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Tian et al. [13]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">CTPN</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Tian et al. [13]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">CTPN</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">ECCV</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.74</font></td>
@@ -2942,8 +3101,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">He et al. [19]</font></td>
-		<td align="center" sdnum="2052;0;@"><br></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">He et al. [19]</font></td>
+		<td align="left" sdnum="2052;0;@"><br></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">ACCV</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -2960,8 +3119,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.79</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Shi et al. [23]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">SegLink</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Shi et al. [23]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">SegLink</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.731</font></td>
@@ -2978,11 +3137,47 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Tang et al. [52]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">SSFT</font></td>
+		<td height="20" align="left">Wang et al. [86]</td>
+		<td align="left">DSRN</td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">IJCAI</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.832</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.796</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.814</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.876</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.712</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.785</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+	</tr>
+	<tr>
+		<td height="20" align="left">Tang et al.[89]</td>
+		<td align="left">Seglink++</td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">PR</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.837</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.803</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.820</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+	</tr>
+	<tr>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Tang et al. [52]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">SSFT</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">TMM</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
-		<td rowspan=8 align="center" valign=middle><font face="Arial">Hybrid</font></td>
+		<td rowspan=10 align="left" valign=middle><font face="Arial">Hybrid</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -2997,8 +3192,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.631</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Xie et al.[61]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">SPCNet</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Xie et al.[61]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">SPCNet</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">AAAI</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.89</font></td>
@@ -3015,8 +3210,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Liu et al. [64]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">PMTD</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Liu et al. [64]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">PMTD</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.913</font></td>
@@ -3033,8 +3228,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center"><font face="Arial">Liu et al. [80]</font></td>
-		<td align="center"><font face="Arial">BDN</font></td>
+		<td height="20" align="left"><font face="Arial">Liu et al. [80]</font></td>
+		<td align="left"><font face="Arial">BDN</font></td>
 		<td align="center"><font face="Arial">IJCAI</font></td>
 		<td align="center" sdval="2019" sdnum="2052;"><font face="Arial">2019</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.881</font></td>
@@ -3051,8 +3246,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center"><font face="Arial">Zhang et al. [81]</font></td>
-		<td align="center"><font face="Arial">LOMO</font></td>
+		<td height="20" align="left"><font face="Arial">Zhang et al. [81]</font></td>
+		<td align="left"><font face="Arial">LOMO</font></td>
 		<td align="center"><font face="Arial">CVPR</font></td>
 		<td align="center" sdval="2019" sdnum="2052;"><font face="Arial">2019</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.878</font></td>
@@ -3069,8 +3264,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center"><font face="Arial">Zhou et al. [24]</font></td>
-		<td align="center"><font face="Arial">EAST</font></td>
+		<td height="20" align="left"><font face="Arial">Zhou et al. [24]</font></td>
+		<td align="left"><font face="Arial">EAST</font></td>
 		<td align="center"><font face="Arial">CVPR</font></td>
 		<td align="center"><font face="Arial">2017</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.833</font></td>
@@ -3087,8 +3282,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Yue et al. [48]</font></td>
-		<td align="center"><br></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Yue et al. [48]</font></td>
+		<td align="left"><br></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">BMVC</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.866</font></td>
@@ -3105,8 +3300,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.675</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Zhong et al. [53]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">AF-RPN</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Zhong et al. [53]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">AF-RPN</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.89</font></td>
@@ -3122,24 +3317,61 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
+	<tr>
+		<td height="20" align="left">Xue et al.[85]</td>
+		<td align="left">MSR</td>
+		<td align="center">IJCAI</td>
+		<td align="center" sdval="2019" sdnum="2052;">2019</td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdval="0.874" sdnum="2052;">0.874</td>
+		<td align="center" sdval="0.767" sdnum="2052;">0.767</td>
+		<td align="center" sdval="0.817" sdnum="2052;">0.817</td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+	</tr>
+	<tr>
+		<td height="20" align="left">Liao et al. [91]</td>
+		<td align="left">DB</td>
+		<td align="center">AAAI</td>
+		<td align="center" sdval="2020" sdnum="2052;">2020</td>
+		<td align="center" sdval="0.918" sdnum="2052;">0.918</td>
+		<td align="center" sdval="0.832" sdnum="2052;">0.832</td>
+		<td align="center" sdval="0.873" sdnum="2052;">0.873</td>
+		<td align="center" sdval="0.915" sdnum="2052;">0.915</td>
+		<td align="center" sdval="0.792" sdnum="2052;">0.792</td>
+		<td align="center" sdval="0.849" sdnum="2052;">0.849</td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+	</tr>
 </table>
 
 <table cellspacing="0" border="0">
-	<colgroup width="115"></colgroup>
-	<colgroup width="110"></colgroup>
-	<colgroup span="2" width="85"></colgroup>
-	<colgroup width="123"></colgroup>
-	<colgroup span="12" width="85"></colgroup>
+	<colgroup width="116"></colgroup>
+	<colgroup span="3" width="85"></colgroup>
+	<colgroup width="129"></colgroup>
+	<colgroup span="7" width="85"></colgroup>
+	<colgroup width="141"></colgroup>
+	<colgroup span="4" width="85"></colgroup>
 	<tr>
 		<td rowspan=2 height="39" align="center" valign=middle><b><font face="Arial">Method&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></b></td>
 		<td rowspan=2 align="center" valign=middle><b><font face="Arial">Model</font></b></td>
 		<td rowspan=2 align="center" valign=middle><b>Source</b></td>
 		<td rowspan=2 align="center" valign=middle><b>Time</b></td>
 		<td rowspan=2 align="center" valign=middle><b>Method Category</b></td>
-		<td colspan=3 align="center" valign=middle sdnum="2052;0;@"><b><font face="Arial">COCO-Text [72]</font></b></td>
-		<td colspan=3 align="center" valign=middle sdnum="2052;0;@"><b><font face="Arial">RCTW-17 [73]</font></b></td>
-		<td colspan=3 align="center" valign=middle sdnum="2052;0;@"><b><font face="Arial">MLT [76]</font></b></td>
-		<td colspan=3 align="center" valign=middle sdnum="2052;0;@"><b><font face="Arial">OSTD[77]</font></b></td>
+		<td colspan=3 align="center" valign=middle sdnum="2052;0;@"><b><font face="Arial">IC15 [70]</font></b></td>
+		<td colspan=3 align="center" valign=middle sdnum="2052;0;@"><b><font face="Arial">MSRA-TD500 [71]</font></b></td>
+		<td colspan=3 align="center" valign=middle sdnum="2052;0;@"><b><font face="Arial">USTB-SV1K [65]</font></b></td>
+		<td colspan=3 align="center" valign=middle sdnum="2052;0;@"><b><font face="Arial">SVT [66]</font></b></td>
 		</tr>
 	<tr>
 		<td align="center" sdnum="2052;0;@"><b><font face="Arial">P</font></b></td>
@@ -3306,7 +3538,7 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">SSTD</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">ICCV</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2017</font></td>
-		<td rowspan=8 align="center" valign=middle><font face="Arial">Regression</font></td>
+		<td rowspan=11 align="center" valign=middle><font face="Arial">Regression</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.46</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.31</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.37</font></td>
@@ -3447,11 +3679,65 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
+		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Liao et al. [44]</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">RRD</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.591</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.775</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.670</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+	</tr>
+	<tr>
+		<td height="20" align="left">Richardson et al. [87]</td>
+		<td align="left" valign=middle sdnum="2052;0;@"><br></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">IJCAI</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.729</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.618</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.669</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center">Wang et al. [88]</td>
+		<td align="center">SAST</td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">ACMM</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.7935</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.6653</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.7237</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+	</tr>
+	<tr>
 		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Xie et al.[61]</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">SPCNet</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">AAAI</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
-		<td rowspan=6 align="center" valign=middle><font face="Arial">Hybrid</font></td>
+		<td rowspan=7 align="center" valign=middle><font face="Arial">Hybrid</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -3555,7 +3841,28 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
+	<tr>
+		<td height="20" align="left">Liao et al. [91]</td>
+		<td align="center">DB</td>
+		<td align="center">AAAI</td>
+		<td align="center" sdval="2020" sdnum="2052;">2020</td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdval="0.831" sdnum="2052;">0.831</td>
+		<td align="center" sdval="0.679" sdnum="2052;">0.679</td>
+		<td align="center" sdval="0.747" sdnum="2052;">0.747</td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+	</tr>
 </table>
+
+
+
 
 <a id="223-Detection-Results-on-Irregular-Text-Datasets"></a>
 #### 2.2.3 Detection Results on Irregular-Text Datasets
@@ -3585,11 +3892,11 @@ In this section, we only select those methods suitable for irregular text detect
 		<td align="center" sdnum="2052;0;@"><b><font face="Arial">F</font></b></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" valign=middle sdnum="2052;0;@"><font face="Arial">Baek et al. [62]</font></td>
-		<td align="center" valign=middle sdnum="2052;0;@"><font face="Arial">CRAFT</font></td>
+		<td height="20" align="left" valign=middle sdnum="2052;0;@"><font face="Arial">Baek et al. [62]</font></td>
+		<td align="left" valign=middle sdnum="2052;0;@"><font face="Arial">CRAFT</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
-		<td rowspan=4 align="center" valign=middle sdnum="2052;0;@"><font face="Arial">Segmentation</font></td>
+		<td rowspan=6 align="center" valign=middle sdnum="2052;0;@"><font face="Arial">Segmentation</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.876</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.799</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.836</font></td>
@@ -3598,8 +3905,8 @@ In this section, we only select those methods suitable for irregular text detect
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.835</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Long et al. [46]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">TextSnake</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Long et al. [46]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">TextSnake</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">ECCV</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.827</font></td>
@@ -3610,8 +3917,8 @@ In this section, we only select those methods suitable for irregular text detect
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.756</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center">Tian et al. [83]</td>
-		<td align="center"><br></td>
+		<td height="20" align="left">Tian et al. [83]</td>
+		<td align="left"><br></td>
 		<td align="center"><font face="Arial">CVPR</font></td>
 		<td align="center" sdval="2019" sdnum="2052;"><font face="Arial">2019</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -3622,8 +3929,8 @@ In this section, we only select those methods suitable for irregular text detect
 		<td align="center" sdval="80.1" sdnum="2052;">80.1</td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Wang et al. [54]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">PSENet</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Wang et al. [54]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">PSENet</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.840</font></td>
@@ -3634,11 +3941,35 @@ In this section, we only select those methods suitable for irregular text detect
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.822</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Zhu et al. [55]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">SLPR</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Wang et al. [88]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">SAST</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">ACMM</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.8557</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.7549</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.802</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.8119</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.8171</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.8145</font></td>
+	</tr>
+	<tr>
+		<td height="20" align="left">Wang et al. [90]</td>
+		<td align="left">PAN</td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">ICCV</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.893</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.81</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.85</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.864</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.812</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.837</font></td>
+	</tr>
+	<tr>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Zhu et al. [55]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">SLPR</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
-		<td rowspan=4 align="center" valign=middle sdnum="2052;0;@"><font face="Arial">Regression</font></td>
+		<td rowspan=5 align="center" valign=middle sdnum="2052;0;@"><font face="Arial">Regression</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -3647,8 +3978,8 @@ In this section, we only select those methods suitable for irregular text detect
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.748</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Liu et al. [63]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">CTD+TLOC</font></td>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Liu et al. [63]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">CTD+TLOC</font></td>
 		<td align="center"><font face="Arial">PR</font></td>
 		<td align="center" sdval="2019" sdnum="2052;"><font face="Arial">2019</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -3659,8 +3990,8 @@ In this section, we only select those methods suitable for irregular text detect
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.734</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="center">Wang et al. [82]</td>
-		<td align="center"><br></td>
+		<td height="20" align="left">Wang et al. [82]</td>
+		<td align="left"><br></td>
 		<td align="center"><font face="Arial">CVPR</font></td>
 		<td align="center" sdval="2019" sdnum="2052;"><font face="Arial">2019</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -3671,8 +4002,8 @@ In this section, we only select those methods suitable for irregular text detect
 		<td align="center" sdval="80.1" sdnum="2052;">80.1</td>
 	</tr>
 	<tr>
-		<td height="20" align="center">Liu et al. [84]</td>
-		<td align="center"><br></td>
+		<td height="20" align="left">Liu et al. [84]</td>
+		<td align="left"><br></td>
 		<td align="center"><font face="Arial">CVPR</font></td>
 		<td align="center" sdval="2019" sdnum="2052;"><font face="Arial">2019</font></td>
 		<td align="center" sdval="0.814" sdnum="2052;">0.814</td>
@@ -3683,21 +4014,33 @@ In this section, we only select those methods suitable for irregular text detect
 		<td align="center" sdval="0.774" sdnum="2052;">0.774</td>
 	</tr>
 	<tr>
-		<td height="20" align="center">Zhang et al. [81]</td>
-		<td align="center">LOMO</td>
-		<td align="center"><font face="Arial">CVPR</font></td>
-		<td align="center" sdval="2019" sdnum="2052;"><font face="Arial">2019</font></td>
-		<td rowspan=2 align="center" valign=middle><font face="Arial">Hybrid</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">87.6</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">79.3</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">83.3</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">85.7</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">76.5</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">80.8</font></td>
+		<td height="20" align="left">Tang et al.[89]</td>
+		<td align="left">Seglink++</td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">PR</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
+		<td align="center" sdval="0.829" sdnum="2052;">0.829</td>
+		<td align="center" sdval="0.809" sdnum="2052;">0.809</td>
+		<td align="center" sdval="0.815" sdnum="2052;">0.815</td>
+		<td align="center" sdval="0.828" sdnum="2052;">0.828</td>
+		<td align="center" sdval="0.798" sdnum="2052;">0.798</td>
+		<td align="center" sdval="0.813" sdnum="2052;">0.813</td>
 	</tr>
 	<tr>
-		<td height="20" align="center" sdnum="2052;0;@"><font face="Arial">Xie et al.[61]</font></td>
-		<td align="center" sdnum="2052;0;@"><font face="Arial">SPCNet</font></td>
+		<td height="20" align="left">Zhang et al. [81]</td>
+		<td align="left">LOMO</td>
+		<td align="center"><font face="Arial">CVPR</font></td>
+		<td align="center" sdval="2019" sdnum="2052;"><font face="Arial">2019</font></td>
+		<td rowspan=4 align="center" valign=middle><font face="Arial">Hybrid</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.876</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.793</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.833</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.857</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.765</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.808</font></td>
+	</tr>
+	<tr>
+		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Xie et al.[61]</font></td>
+		<td align="left" sdnum="2052;0;@"><font face="Arial">SPCNet</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">AAAI</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.83</font></td>
@@ -3706,6 +4049,30 @@ In this section, we only select those methods suitable for irregular text detect
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+	</tr>
+	<tr>
+		<td height="20" align="left">Xue et al.[85]</td>
+		<td align="left">MSR</td>
+		<td align="center">IJCAI</td>
+		<td align="center" sdval="2019" sdnum="2052;">2019</td>
+		<td align="center" sdval="0.852" sdnum="2052;">0.852</td>
+		<td align="center" sdval="0.73" sdnum="2052;">0.73</td>
+		<td align="center" sdval="0.768" sdnum="2052;">0.768</td>
+		<td align="center" sdval="0.838" sdnum="2052;">0.838</td>
+		<td align="center" sdval="0.778" sdnum="2052;">0.778</td>
+		<td align="center" sdval="0.807" sdnum="2052;">0.807</td>
+	</tr>
+	<tr>
+		<td height="20" align="left">Liao et al. [91]</td>
+		<td align="left">DB</td>
+		<td align="center">AAAI</td>
+		<td align="center" sdval="2020" sdnum="2052;">2020</td>
+		<td align="center" sdval="0.871" sdnum="2052;">0.871</td>
+		<td align="center" sdval="0.825" sdnum="2052;">0.825</td>
+		<td align="center" sdval="0.847" sdnum="2052;">0.847</td>
+		<td align="center" sdval="0.869" sdnum="2052;">0.869</td>
+		<td align="center" sdval="0.802" sdnum="2052;">0.802</td>
+		<td align="center" sdval="0.834" sdnum="2052;">0.834</td>
 	</tr>
 </table>
 
@@ -3836,6 +4203,13 @@ If you are insterested in developing better scene text detection metrics, some r
 | **[82]** Xiaobing Wang, Yingying Jiang, et al, **Arbitrary Shape Scene Text Detection with Adaptive Text Region Representation**. In CVPR, 2019. [Paper](https://arxiv.org/abs/1905.05980?context=cs.CV)|
 | **[83]** Zhuotao Tian, Michelle Shu, et al, **Learning Shape-Aware Embedding for Scene Text Detection**. In CVPR, 2019. [Paper](http://jiaya.me/papers/textdetection_cvpr19.pdf)|
 | **[84]** Zichuan Liu, Guosheng Lin, et al, **Towards Robust Curve Text Detection with Conditional Spatial Expansion**. In CVPR, 2019. [Paper](https://arxiv.org/abs/1903.08836)|
+| **[85]** Xue C, Lu S, Zhang W. **MSR: multi-scale shape regression for scene text detection**. In IJCAI, 2019. [Paper](https://arxiv.org/abs/1901.02596)|
+| **[86]** Wang Y, Xie H, Fu Z, et al. **DSRN: a deep scale relationship network for scene text detection.** In IJCAI, 2019: 947-953. [Paper](https://pdfs.semanticscholar.org/cc51/d4756494ffea379aba095c41bde77c61f65c.pdf)|
+| **[87]** Elad Richardson, et al, **It's All About The Scale -- Efficient Text Detection Using Adaptive Scaling**. In WACV, 2020. [Paper](https://arxiv.org/abs/1907.12122)|
+| **[88]** Pengfei Wang, et al, **A Single-Shot Arbitrarily-Shaped Text Detector based on Context Attended Multi-Task Learning**. In ACMM, 2019. [Paper](https://arxiv.org/abs/1908.05498)|
+| **[89]** Jun Tang, et al, **SegLink ++: Detecting Dense and Arbitrary-shaped Scene Text by Instance-aware Component Grouping**. In PR, 2019. [Paper](https://www.researchgate.net/publication/334015431_Detecting_Dense_and_Arbitrary-shaped_Scene_Text_by_Instance-aware_Component_Grouping)|
+| **[90]** Wenhai Wang, et al, **Efﬁcient and Accurate Arbitrary-Shaped Text Detection with Pixel Aggregation Network**. In ICCV, 2019. [Paper](https://arxiv.org/abs/1903.08836)|
+| **[91]** Minghui Liao, et al, **Real-time Scene Text Detection with Differentiable Binarization**. In AAAI, 2020. [Paper](https://arxiv.org/abs/1903.08836)[Code](https://github.com/MhLiao/DB)|
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Datasets** |
 | **USTB-SV1K[65]**：Xu-Cheng Yin, Xuwang Yin, Kaizhu Huang, and Hong-Wei Hao, **Robust text detection   in natural scene images**, IEEE Trans. Pattern Analysis and Machine Intelligence (TPAMI), priprint, 2013. [Paper](https://ieeexplore.ieee.org/document/6247787) |
 | **SVT[66]**:  Wang,Kai, and S. Belongie. **Word Spotting in the Wild**. European Conference on Computer Vision(ECCV), 2010: 591-604.  [Paper](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.168.4897&rep=rep1&type=pdf) |
@@ -3853,13 +4227,13 @@ If you are insterested in developing better scene text detection metrics, some r
 | **CTW[78]**: Yuan T L, Zhu Z, Xu K, et al. **Chinese Text in the Wild**. arXiv preprint arXiv:1803.00085, 2018. [Paper](https://arxiv.org/abs/1803.00085) |
 
 
-If you find any problems in our resources, or any good papers/codes we have missed, please inform us at    **liuchongyu1996@gmail.com**. Thank you for your contribution. 
+If you find any problems in our resources, or any good papers/codes we have missed, please inform us at    **liuchongyu1996@gmail.com**. Thank you for your contribution.
 
 
 
 ### Copyright
 
-Copyright @ 2019 SCUT-DLVC. All Rights Reserved.
+Copyright © 2019 SCUT-DLVC. All Rights Reserved.
 
 <p align="center">
     <img src="scut-dlvc.jpeg" alt="Sample"  width="150" height="75">
