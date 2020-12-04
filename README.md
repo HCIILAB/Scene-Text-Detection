@@ -4,6 +4,13 @@
 
 <!-- MarkdownTOC -->
 
+# Updates
+
+Dec 4, 2020: Add 2 papers from CVPR2020/ECCV2020 and update corresponding tables.
+<!-- /MarkdownTOC -->
+
+------
+
 - [1.Datasets](#1-datasets)
     - [1.1 Horizontal-Text Datasets](#11-Horizontal-Text-Datasets)
     - [1.2 Arbitrary-Quadrilateral-Text Datasets](#12-Arbitrary-Quadrilateral-Text-Datasets)
@@ -975,11 +982,12 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 <a id="213-regression-methods"></a>
 #### 2.1.3 Regression-based Methods
 
+<body>
 <table cellspacing="0" border="0">
 	<colgroup width="118"></colgroup>
 	<colgroup span="7" width="85"></colgroup>
 	<colgroup width="797"></colgroup>
-	<tr>
+  <tr>
 		<td height="20" align="center"><b><font face="Arial">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Method&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></b></td>
 		<td align="center"><b><font face="Arial">&nbsp;&nbsp;&nbsp;&nbsp;Model&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></b></td>
 		<td align="center"><b><font face="Arial">Code</font></b></td>
@@ -1342,9 +1350,19 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="left" sdval="2019" sdnum="2052;">2019</td>
 		<td align="left">Presenting instance aware component grouping (ICG) for arbitrary-shape text detection.</td>
 	</tr>
+	<tr>
+		<td height="20" align="left">Wang et al.[92]</td>
+		<td align="left">ContourNet</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left">CVPR</td>
+		<td align="left" sdval="2020" sdnum="2052;">2020</td>
+		<td align="left">1.A scale-insensitive Adaptive Region Proposal Network (AdaptiveRPN); 2. Local Orthogonal Texture-aware Module (LOTM).</td>
+	</tr>
 </table>
-
-
+</body>
 
 <a id="214-hybrid-methods"></a>
 #### 2.1.4 Hybrid Methods
@@ -1354,8 +1372,8 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 	<colgroup width="118"></colgroup>
 	<colgroup width="135"></colgroup>
 	<colgroup span="6" width="85"></colgroup>
-	<colgroup width="268"></colgroup>
-	<tr>
+	<colgroup width="516"></colgroup>
+  <tr>
 		<td height="20" align="center"><b><font face="Arial">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Method&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></b></td>
 		<td align="center"><b><font face="Arial">&nbsp;&nbsp;&nbsp;&nbsp;Model&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></b></td>
 		<td align="center"><b><font face="Arial">Code</font></b></td>
@@ -1476,11 +1494,23 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="left" sdval="2020" sdnum="2052;">2020</td>
 		<td align="left">Presenting differentiable binarization module to adaptively set the thresholds for binarization, which simpliﬁes the post-processing.</td>
 	</tr>
+	<tr>
+		<td height="20" align="left">Xiao et al. [93]</td>
+		<td align="left">SDM</td>
+		<td align="left" sdnum="2052;0;@">✕</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left" sdnum="2052;0;@">✓</td>
+		<td align="left">ECCV</td>
+		<td align="left" sdval="2020" sdnum="2052;">2020</td>
+		<td align="left">1. A novel sequential deformation method; 2. auxiliary character counting supervision.</td>
+	</tr>
 </table>
+<!-- ************************************************************************** -->
+</body>
 
 <a id="22-detection-result"></a>
 ### 2.2 Detection Results
-
 
 
 
@@ -2291,14 +2321,15 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 <a id="222-Detection-Results-on-Arbitrary-Quadrilateral-Text-Datasets"></a>
 #### 2.2.2 Detection Results on Arbitrary-Quadrilateral-Text Datasets
 
+<body>
 <table cellspacing="0" border="0">
-	<colgroup width="116"></colgroup>
+	<colgroup width="147"></colgroup>
 	<colgroup span="3" width="85"></colgroup>
 	<colgroup width="129"></colgroup>
 	<colgroup span="7" width="85"></colgroup>
 	<colgroup width="141"></colgroup>
 	<colgroup span="4" width="85"></colgroup>
-	<tr>
+  <tr>
 		<td rowspan=2 height="39" align="center" valign=middle><b><font face="Arial">Method&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></b></td>
 		<td rowspan=2 align="center" valign=middle><b><font face="Arial">Model</font></b></td>
 		<td rowspan=2 align="center" valign=middle><b>Source</b></td>
@@ -2328,7 +2359,7 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="left" sdnum="2052;0;@"><font face="Arial">HOCC</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2014</font></td>
-		<td rowspan=6 align="left" valign=middle><font face="Arial">Traditional</font></td>
+		<td rowspan=6 align="center" valign=middle><font face="Arial">Traditional</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -2437,7 +2468,7 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="left"><br></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
-		<td rowspan=21 align="left" valign=middle><font face="Arial">Segmentation</font></td>
+		<td rowspan=21 align="center" valign=middle><font face="Arial">Segmentation</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.71</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.43</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.54</font></td>
@@ -2816,7 +2847,7 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="left" sdnum="2052;0;@"><font face="Arial">FCRN</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2016</font></td>
-		<td rowspan=20 align="left" valign=middle><font face="Arial">Regression</font></td>
+		<td rowspan=21 align="center" valign=middle><font face="Arial">Regression</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -3173,11 +3204,29 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
+		<td height="20" align="left">Wang et al. [92]</td>
+		<td align="left">ContourNet</td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2020</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.876</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.861</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.869</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+	</tr>
+	<tr>
 		<td height="20" align="left" sdnum="2052;0;@"><font face="Arial">Tang et al. [52]</font></td>
 		<td align="left" sdnum="2052;0;@"><font face="Arial">SSFT</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">TMM</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
-		<td rowspan=10 align="left" valign=middle><font face="Arial">Hybrid</font></td>
+		<td rowspan=11 align="center" valign=middle><font face="Arial">Hybrid</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -3353,16 +3402,37 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
-</table>
-
-<table cellspacing="0" border="0">
-	<colgroup width="116"></colgroup>
-	<colgroup span="3" width="85"></colgroup>
-	<colgroup width="129"></colgroup>
-	<colgroup span="7" width="85"></colgroup>
-	<colgroup width="141"></colgroup>
-	<colgroup span="4" width="85"></colgroup>
 	<tr>
+		<td height="20" align="left">Xiao et al. [93]</td>
+		<td align="left">SDM</td>
+		<td align="center">ECCV</td>
+		<td align="center" sdval="2020" sdnum="2052;">2020</td>
+		<td align="center" sdval="0.9196" sdnum="2052;">0.9196</td>
+		<td align="center" sdval="0.8922" sdnum="2052;">0.8922</td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">0.9057</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+	</tr>
+</table>
+<!-- ************************************************************************** -->
+</body>
+
+
+<body>
+<table cellspacing="0" border="0">
+	<colgroup width="149"></colgroup>
+	<colgroup width="110"></colgroup>
+	<colgroup span="2" width="85"></colgroup>
+	<colgroup width="153"></colgroup>
+	<colgroup span="12" width="85"></colgroup>
+  <tr>
 		<td rowspan=2 height="39" align="center" valign=middle><b><font face="Arial">Method&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></b></td>
 		<td rowspan=2 align="center" valign=middle><b><font face="Arial">Model</font></b></td>
 		<td rowspan=2 align="center" valign=middle><b>Source</b></td>
@@ -3737,7 +3807,7 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">SPCNet</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">AAAI</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2019</font></td>
-		<td rowspan=7 align="center" valign=middle><font face="Arial">Hybrid</font></td>
+		<td rowspan=8 align="center" valign=middle><font face="Arial">Hybrid</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -3842,7 +3912,7 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
 	<tr>
-		<td height="20" align="left">Liao et al. [91]</td>
+		<td height="20" align="center">Liao et al. [91]</td>
 		<td align="center">DB</td>
 		<td align="center">AAAI</td>
 		<td align="center" sdval="2020" sdnum="2052;">2020</td>
@@ -3859,7 +3929,29 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 	</tr>
+	<tr>
+		<td height="20" align="center">Xiao et al. [93]</td>
+		<td align="center">SDM</td>
+		<td align="center">ECCV</td>
+		<td align="center" sdval="2020" sdnum="2052;">2020</td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdval="0.8679" sdnum="2052;">0.8679</td>
+		<td align="center" sdval="0.7526" sdnum="2052;">0.7526</td>
+		<td align="center" sdval="0.8061" sdnum="2052;">0.8061</td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
+	</tr>
 </table>
+<!-- ************************************************************************** -->
+</body>
+
+
 
 
 
@@ -3869,12 +3961,13 @@ It is important to notice that:  (1) "Hori" stands for horizontal scene text dat
 
 In this section, we only select those methods suitable for irregular text detection.
 
+<body>
 <table cellspacing="0" border="0">
 	<colgroup width="111"></colgroup>
 	<colgroup span="3" width="85"></colgroup>
-	<colgroup width="117"></colgroup>
+	<colgroup width="185"></colgroup>
 	<colgroup span="6" width="85"></colgroup>
-	<tr>
+  <tr>
 		<td rowspan=2 height="39" align="center" valign=middle sdnum="2052;0;@"><b><font face="Arial">Method&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></b></td>
 		<td rowspan=2 align="center" valign=middle sdnum="2052;0;@"><b><font face="Arial">Model</font></b></td>
 		<td rowspan=2 align="center" valign=middle><b>Source</b></td>
@@ -3969,7 +4062,7 @@ In this section, we only select those methods suitable for irregular text detect
 		<td align="left" sdnum="2052;0;@"><font face="Arial">SLPR</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">arXiv</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2018</font></td>
-		<td rowspan=5 align="center" valign=middle sdnum="2052;0;@"><font face="Arial">Regression</font></td>
+		<td rowspan=6 align="center" valign=middle sdnum="2052;0;@"><font face="Arial">Regression</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">~</font></td>
@@ -4026,11 +4119,23 @@ In this section, we only select those methods suitable for irregular text detect
 		<td align="center" sdval="0.813" sdnum="2052;">0.813</td>
 	</tr>
 	<tr>
+		<td height="20" align="left">Wang et al. [92]</td>
+		<td align="left">ContourNet</td>
+		<td align="center" sdnum="2052;0;@"><font face="Arial">CVPR</font></td>
+		<td align="center" sdnum="2052;0;@"><font face="Times New Roman">2020</font></td>
+		<td align="center" sdval="0.869" sdnum="2052;">0.869</td>
+		<td align="center" sdval="0.839" sdnum="2052;">0.839</td>
+		<td align="center" sdval="0.854" sdnum="2052;">0.854</td>
+		<td align="center" sdval="0.837" sdnum="2052;">0.837</td>
+		<td align="center" sdval="0.841" sdnum="2052;">0.841</td>
+		<td align="center" sdval="0.839" sdnum="2052;">0.839</td>
+	</tr>
+	<tr>
 		<td height="20" align="left">Zhang et al. [81]</td>
 		<td align="left">LOMO</td>
 		<td align="center"><font face="Arial">CVPR</font></td>
 		<td align="center" sdval="2019" sdnum="2052;"><font face="Arial">2019</font></td>
-		<td rowspan=4 align="center" valign=middle><font face="Arial">Hybrid</font></td>
+		<td rowspan=5 align="center" valign=middle><font face="Arial">Hybrid</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.876</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.793</font></td>
 		<td align="center" sdnum="2052;0;@"><font face="Arial">0.833</font></td>
@@ -4074,8 +4179,21 @@ In this section, we only select those methods suitable for irregular text detect
 		<td align="center" sdval="0.802" sdnum="2052;">0.802</td>
 		<td align="center" sdval="0.834" sdnum="2052;">0.834</td>
 	</tr>
+	<tr>
+		<td height="20" align="left">Xiao et al.[93]</td>
+		<td align="left">SDM</td>
+		<td align="center">ECCV</td>
+		<td align="center" sdval="2020" sdnum="2052;">2020</td>
+		<td align="center" sdval="0.9085" sdnum="2052;">0.9085</td>
+		<td align="center" sdval="0.8603" sdnum="2052;">0.8603</td>
+		<td align="center" sdval="0.8837" sdnum="2052;">0.8837</td>
+		<td align="center" sdval="0.884" sdnum="2052;">0.884</td>
+		<td align="center" sdval="0.8442" sdnum="2052;">0.8442</td>
+		<td align="center" sdval="0.8636" sdnum="2052;">0.8636</td>
+	</tr>
 </table>
-
+<!-- ************************************************************************** -->
+</body>
 
 <a id="3-survey"></a>
 ## 3. Survey
@@ -4210,6 +4328,8 @@ If you are insterested in developing better scene text detection metrics, some r
 | **[89]** Jun Tang, et al, **SegLink ++: Detecting Dense and Arbitrary-shaped Scene Text by Instance-aware Component Grouping**. In PR, 2019. [Paper](https://www.researchgate.net/publication/334015431_Detecting_Dense_and_Arbitrary-shaped_Scene_Text_by_Instance-aware_Component_Grouping)|
 | **[90]** Wenhai Wang, et al, **Efﬁcient and Accurate Arbitrary-Shaped Text Detection with Pixel Aggregation Network**. In ICCV, 2019. [Paper](https://arxiv.org/abs/1903.08836)|
 | **[91]** Minghui Liao, et al, **Real-time Scene Text Detection with Differentiable Binarization**. In AAAI, 2020. [Paper](https://arxiv.org/abs/1903.08836)[Code](https://github.com/MhLiao/DB)|
+| **[92]** Wang, Yuxin, et al. **ContourNet: Taking a Further Step toward Accurate Arbitrary-shaped Scene Text Detection.** CVPR. 2020. [Paper](https://openaccess.thecvf.com/content_CVPR_2020/html/Wang_ContourNet_Taking_a_Further_Step_Toward_Accurate_Arbitrary-Shaped_Scene_Text_CVPR_2020_paper.html)[Code](https://github.com/wangyuxin87/ContourNet)|
+| **[93]** Xiao, et al, **Sequential Deformation for Accurate Scene Text Detection**. In ECCV, 2020. [Paper](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123740103.pdf)|
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Datasets** |
 | **USTB-SV1K[65]**：Xu-Cheng Yin, Xuwang Yin, Kaizhu Huang, and Hong-Wei Hao, **Robust text detection   in natural scene images**, IEEE Trans. Pattern Analysis and Machine Intelligence (TPAMI), priprint, 2013. [Paper](https://ieeexplore.ieee.org/document/6247787) |
 | **SVT[66]**:  Wang,Kai, and S. Belongie. **Word Spotting in the Wild**. European Conference on Computer Vision(ECCV), 2010: 591-604.  [Paper](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.168.4897&rep=rep1&type=pdf) |
