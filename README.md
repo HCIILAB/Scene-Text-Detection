@@ -4244,6 +4244,7 @@ If you are insterested in developing better scene text detection metrics, some r
 |          [Online Chinese Recognition](http://chongdata.com/ocr/)           |  √   |  √   |
 |   [Calamari OCR](https://github.com/Calamari-OCR/calamari)   |  ×   |  √   |
 |   [Tencent OCR](https://cloud.tencent.com/product/ocr?lang=cn)   |  √   |  ×   |
+|   [Paddle OCR](https://github.com/PaddlePaddle/PaddleOCR)   |  √   |  √   |
 
 
 <a id="6-references"></a>
